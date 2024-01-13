@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Weather App</h1>
+
+        <div class="tab-container">
+            <p class="tab" data-userweather>Your Weather</p>
+            <p class="tab" data-searchweather>Search Weather</p>
+
+
+        </div>
+        
+
+        <div class="wxcontainer">
+
+            <div class="sub-container glocation">
+                <img src="l.png.png" alt="Grant Location JPG" width="80" height="88" loading="lazy" >
+                <p>Grant Location Access</p>
+                <p>Allow Access to get Weather Information</p>
+                <button class="btn" data-grantbtn>Grant Access</button>
+            </div>
+
+            <form class="formc" data-searchform>
+                <input placeholder="Search For CIty">
+                <button class="btn">
+                    <img src="" alt="Search" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+            <!-- Loading Container -->
+            <div class="sub-container loading">
+                <img src="loading.gif" alt="Loading..." height="150" width="150" >
+                <p>Loading</p>  
+            </div>
+
+            <!-- Show Wx Info -->
+            <div class="sub-container uic">
+
+                <!-- city name and flag -->
+                <div class="name">
+                    <p data-cityname> </p>
+                    <img src="" alt="" data-countryicon>
+                </div>
+
+                <!-- Wx Desc -->
+                <p data-wxdesc></p>
+                <!-- Wx Icon -->
+                <img src="" alt="" data-wxicon>
+                <!-- Temp -->
+                <p data-temp></p>
+
+                <!-- Other Parameters -->
+
+                <div class="parac">
+
+                    <div class="parameter">
+
+                        <img src="wind.png" alt="wind" height="200px" width="200px">
+                        <p>Windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+
+                    <div class="parameter">
+
+                        <img src="humidity.png" alt="humidity" height="200px" width="200px">
+                        <p>Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+
+                    <div class="parameter">
+
+                        <img src="cloud.png" height="200px" width="200px">
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
