@@ -9,6 +9,7 @@ const userinfocontainer = document.querySelector(".uic");
 // Varaibales declaration
 
 let currenttab = usertab;
+grantaccess.classList.add("active");
 const API_KEY = "edd5b90525a698c15659fe2460eea554";
 currenttab.classList.add("current-tab");
 

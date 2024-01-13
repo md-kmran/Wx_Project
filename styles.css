@@ -117,7 +117,7 @@ h1{
 }
 
 .uic{
-    /* display: none; */
+    display: none;
 }
 
 .uic.active{
